@@ -1,0 +1,45 @@
+{
+    "intents": [
+	{
+	    "intent": "AMAZON.HelpIntent"
+	},
+
+	{
+	    "intent": "TopRepos"
+# Add Star and Forks
+	},
+
+	{
+	    "intent": "TopLanguages"
+# Use Activity
+	},
+
+	{
+	    "intent": "TopOrgs"
+# Use top repos
+	},
+
+	{
+	    "intent": "TopUsers"
+# Use top repos
+	},
+
+	{
+	    "intent":"MostActiveUsers"
+	},
+
+	{
+	    "slots": [
+		{
+		    "name" : "language",
+		    "type" : "LIST_OF_LANGUAGES"
+		}
+	    ],
+	    "intent":"MostActiveUsersByLang"
+	},
+
+	{
+	    "intent": "AMAZON.StopIntent"
+	}
+    ]
+}

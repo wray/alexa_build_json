@@ -1,0 +1,17 @@
+language: python
+python:
+- '2.7'
+script: "./unittests"
+deploy:
+  provider: lambda
+  function_name: githubInfo
+  region: us-east-1
+  role: arn:aws:iam::980316180835:role/lambda_techem_skill
+  runtime: python2.7
+  handler_name: lambda_handler
+  zip: "./src"
+  access_key_id: AKIAJC4OTPBSMBJD4ZBA
+  on:
+    branch: master
+  secret_access_key:
+    secure: Cvvwzr3J0IaeN3LoMLSDZH9mwHOyPqWouw6dLe7CjM5sFXbl7NAX82Gh2IedCRge3Rlj2hNd/jBF89qN6D2SVoFBQgtFwdIV4xdYiAkLV8xB/zm4i95FnKd67kxs6z3Fv/eUgt4x33Vj9NeLHoyjqVE0FAPOMfFbfkuP1cY3u+LPTjPjwntPScYX2L3xQlpnYp+eCQazwpIRMJGoHojgD6tTGH+KbCBIOQ6ifO0BEurM5Att5yzipMjHx0oGkaspgAnJ2GvNt4tb9PD5RWjFBDp3vAI+Z2TG/aTKpxivZWCtVfQFUplwK7bPSmA0d72VgfCVvtgZfAqOUHO/9LL5jvAEJ+0J9I0Tnq0LBEX+840m3oVshQVuas2GuZnuEVhdAZzPvTEr+q3th9RP0dXB3Ib19OSOQyka75Zk/VVazGoKBVoGMUr0JRfd+x4hVXjTjbF0fBHaPoYeaacb3yovoS8RTqTHAuNnUtTgTxXSqYKKpVwG4vqIpJG1oNHPCwIj08nro8Q5ZnhW/yiRpW980/akp4d45LwGbnyR1NGd/is9Bliq5OGC0l3Sa1OTVHWvpdgoUgqXU+4zQFXvzZ1Rb5YU5RRtjShWvs+1CX1Ow3MvSCsyQ3L2cUfnWM+4RTbpDplvH4F6icWvXN2qWFfDFSU2R1qekDpIhO5RsGUqnHU=
