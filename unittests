@@ -1,2 +1,4 @@
 
 echo Use this script if needed to setup secure API keys and to call tests
+
+echo NO_KEY="NO_KEY" > ./src/settings.py
