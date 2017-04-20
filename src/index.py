@@ -85,17 +85,13 @@ def speak_events(events,lookahead):
 
 
 # --------------- Your functions to implement your intents ------------------
-def upcoming(intent, session):
+def top_users(intent, session):
     session_attributes = {}
     reprompt_text = None
     speech_output = ""
     should_end_session = True
 
-    speech_output = "<speak> The following meetup events are happening in Central Virginia very soon. "
-
-    resp = urllib2.urlopen('https://api.meetup.com/find/events?radius=50&order=time&sign=true&key='+key)
-
-    speech_output += speak_events(json.loads(resp.read()),1)
+    speech_output = "<speak> The following top users are in RVA: Joe Tech Em and Long Hair. "
 
     speech_output += " </speak>"
 
@@ -183,8 +179,8 @@ def on_intent(intent_request, session):
 
     # Dispatch to your skill's intent handlers
 
-    if intent_name == "Upcoming":
-        return upcoming(intent,session)
+    if intent_name == "TopUsers":
+        return top_users(intent,session)
     elif intent_name == "GetEventsByTopic":
         return get_events_by_topic(intent,session)    
     elif intent_name == "AMAZON.HelpIntent":
