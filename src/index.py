@@ -18,13 +18,13 @@ import urllib2
 import json
 import time
 import datetime
-import pytz
+#import pytz
 
 # Assume tz on lambda is UTC
 day = datetime.datetime.now().timetuple() # probably should move into function
 utc = pytz.utc
 eastern = pytz.timezone('US/Eastern')
-key = settings.MEETUP_API_KEY
+#key = settings.MEETUP_API_KEY
 
 
 # --------------- Helpers that build all of the responses ----------------------
@@ -58,29 +58,29 @@ def build_response(session_attributes, speechlet_response):
     }
 
 # --------------- Helpers -----------------
-def strip_specials(s):
-    return s.replace('&','and').replace('/',',')
+# def strip_specials(s):
+#     return s.replace('&','and').replace('/',',')
 
-def say_time(t):
-    utc_dt = utc.localize(datetime.datetime.utcfromtimestamp(t))
-    loc_dt = utc_dt.astimezone(eastern)
-    if loc_dt.minute == 0:
-        return loc_dt.strftime('%A %B %-d, %-I %p')
-    else:
-        return loc_dt.strftime("%A %B %-d, <say-as interpret-as='cardinal'>%-I</say-as> %M %p")
+# def say_time(t):
+#     utc_dt = utc.localize(datetime.datetime.utcfromtimestamp(t))
+#     loc_dt = utc_dt.astimezone(eastern)
+#     if loc_dt.minute == 0:
+#         return loc_dt.strftime('%A %B %-d, %-I %p')
+#     else:
+#         return loc_dt.strftime("%A %B %-d, <say-as interpret-as='cardinal'>%-I</say-as> %M %p")
 
-def speak_events(events,lookahead):
-    speech = ''
-    num_events = len(events)
-    for i in range(num_events if num_events <= 20 else 20):
-        t = events[i]['time']
-        t = t/1000
-        if t <= int(time.mktime((day[0],day[1],day[2] + lookahead, 23, 59, 0, 0, 0, 0))):
-            speech += '%s by %s on %s. ' % (strip_specials(events[i]['name']),
-                                            strip_specials(events[i]['group']['name']),
-                                            say_time(t))
-            speech += "<break time='500ms' />"
-    return speech
+# def speak_events(events,lookahead):
+#     speech = ''
+#     num_events = len(events)
+#     for i in range(num_events if num_events <= 20 else 20):
+#         t = events[i]['time']
+#         t = t/1000
+#         if t <= int(time.mktime((day[0],day[1],day[2] + lookahead, 23, 59, 0, 0, 0, 0))):
+#             speech += '%s by %s on %s. ' % (strip_specials(events[i]['name']),
+#                                             strip_specials(events[i]['group']['name']),
+#                                             say_time(t))
+#             speech += "<break time='500ms' />"
+#     return speech
 
 
 
