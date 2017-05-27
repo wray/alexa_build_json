@@ -1,4 +1,6 @@
 
 echo Use this script if needed to setup secure API keys and to call tests
 
-echo NO_KEY = "\"NO_KEY\"" > ./src/settings.py
+echo GITHUB_API_KEY = "\"GITHUB_API_KEY\"" > ./pre/settings.py
+
+python ./pre/build_json.py

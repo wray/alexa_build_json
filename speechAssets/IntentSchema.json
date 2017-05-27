@@ -25,13 +25,9 @@
 	},
 
 	{
-	    "intent":"MostActiveUsers"
-	},
-
-	{
 	    "slots": [
 		{
-		    "name" : "language",
+		    "name" : "mostactiveusersbylang_slot",
 		    "type" : "LIST_OF_LANGUAGES"
 		}
 	    ],

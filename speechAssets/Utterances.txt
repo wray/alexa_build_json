@@ -15,13 +15,9 @@ TopOrgs Most Popular Orgs
 TopUsers Top Users
 TopUsers Top Ten Users
 TopUsers Most Popular Users
-MostActiveUsers Top Active Users
-MostActiveUsers Most Active Users
-MostActiveUsers Active Users
-MostActiveUsers Top Ten Active Users
-MostActiveUsersByLang Top Active Users by {language}
-MostActiveUsersByLang Top Users by {language}
-MostActiveUsersByLang Top {language} programmers
-MostActiveUsersByLang Top {language} contributors
-MostActiveUsersByLang {language} programmers
-MostActiveUsersByLang Top 10 {language} contributors
+MostActiveUsersByLang Top Active Users by {mostactiveusersbylang_slot}
+MostActiveUsersByLang Top Users by {mostactiveusersbylang_slot}
+MostActiveUsersByLang Top {mostactiveusersbylang_slot} programmers
+MostActiveUsersByLang Top {mostactiveusersbylang_slot} contributors
+MostActiveUsersByLang {mostactiveusersbylang_slot} programmers
+MostActiveUsersByLang Top ten {mostactiveusersbylang_slot} contributors

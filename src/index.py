@@ -22,8 +22,8 @@ import datetime
 
 # Assume tz on lambda is UTC
 day = datetime.datetime.now().timetuple() # probably should move into function
-utc = pytz.utc
-eastern = pytz.timezone('US/Eastern')
+#utc = pytz.utc
+#eastern = pytz.timezone('US/Eastern')
 #key = settings.MEETUP_API_KEY
 
 
