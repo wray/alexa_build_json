@@ -2,8 +2,6 @@ language: python
 python:
 - '2.7'
 install:
-- pip install urllib2
-- pip install json
 env:
   secure: q9kX1t8V97MAQfatZnO7ndC5CV4HXJV29AWP0SaJYc7Pfhwp2V0RIkVenoMd7p1y3BW9JA/lf8tY06thvaeJwZf0xSIHj87RpqPmCFE11UUoTP4/doCc9Cr5b2NEBT5kdQNaUNBXoXjUs2TKsoFNquJ/mahZgQhottnpvJibX8h0UJwIqBdCyC6GYSPA2IAB2WZghIFBYl65+iEopb06HeUyg7uMS/VOdnBm0791b7vgFNhBzPzJT/++ar9L4dHecmECDRUD9IEQA5uh8XXtA4RZGp4rJSVm+3VwrxeDimr9nvMG9RBtVmc0/c6RXEVbJOYGLtDD90/A6P0L+/5Ijmzg8UAPrlol25mm0VIMfpSrlM0P7B/ov7r52I0sNej4YbcSQdoPzplsNRYV/GlDR8jNsBQvUwhUm6PWVrczD+LxGAc88/9En1iYYw/zHL6OXZaUEYb2aW5kjKQ9OvZGK5aov1z1sp3LOBtxmrjM4ERjS20yBmHm1MgQhUh7ECwBUSwddjNMrrv2wMROgJKSKxTj7l/pXWiaALkhaU78JkPacIW6S3o5GkymANQD/jpNkIocW/4+7XDIxW7VJzxISyYpRJ7eLoyeGjogd7p8Znz6hLZsoUgE7uy7C+3Bh0k3XsM/QPlllmCA41vU3V9R0/6eV/tBLIhnSsv6XyuastQ=
 script: "./unittests"
