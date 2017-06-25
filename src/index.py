@@ -37,8 +37,8 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
         },
         'card': {
             'type': 'Simple',
-            'title': 'RVA Meetups',
-            'content': 'The RVA Meetups provides information on upcoming meetups in Richmond and the Central Virginia area. Go to meetup.com for details on upcoming meetings and groups in your area that share your interests.'
+            'title': 'VA Coders',
+            'content': 'VA Coders provides information about GitHub users and orgs in Virginia. The information here is based on the repos they own.'
         },
         'reprompt': {
             'outputSpeech': {
