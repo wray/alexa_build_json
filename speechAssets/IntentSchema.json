@@ -27,11 +27,11 @@
 	{
 	    "slots": [
 		{
-		    "name" : "mostactiveusersbylang_slot",
+		    "name" : "topusersbylang_slot",
 		    "type" : "LIST_OF_LANGUAGES"
 		}
 	    ],
-	    "intent":"MostActiveUsersByLang"
+	    "intent":"TopUsersByLang"
 	},
 
 	{
