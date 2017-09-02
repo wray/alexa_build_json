@@ -1,23 +1,2 @@
-TopRepos Top Re Poes
-TopRepos Top Repositories
-TopRepos Top Ten Re Poes
-TopRepos Most Popular Re Poes
-TopRepos Most Popular Repositories
-TopLanguages Top Languages
-TopLanguages Top Programming Languages
-TopLanguages Top Ten Programming Languages
-TopLanguages Top Ten Languages
-TopOrgs Top Organizations
-TopOrgs Top Ten Organizations
-TopOrgs Top Orgs
-TopOrgs Top Ten Orgs
-TopOrgs Most Popular Orgs
-TopUsers Top Users
-TopUsers Top Ten Users
-TopUsers Most Popular Users
-MostActiveUsersByLang Top Active Users by {mostactiveusersbylang_slot}
-MostActiveUsersByLang Top Users by {mostactiveusersbylang_slot}
-MostActiveUsersByLang Top {mostactiveusersbylang_slot} programmers
-MostActiveUsersByLang Top {mostactiveusersbylang_slot} contributors
-MostActiveUsersByLang {mostactiveusersbylang_slot} programmers
-MostActiveUsersByLang Top ten {mostactiveusersbylang_slot} contributors
+YourFirstIntent first intent
+YourSecondIntent tell me about {LIST_OF_THINGS}
