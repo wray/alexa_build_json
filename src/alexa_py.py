@@ -41,8 +41,8 @@ Travis to deploy to your lambda/S3. You'll want to change the following configs:
 """
 
 # If you want to use a different bucket name or response JSON file, change them here
-BUCKET_NAME='alexa-python-biz'
-RESPONSE_JSON='github.json'
+BUCKET_NAME='alexa-responses'
+RESPONSE_JSON='<your-skill>.json'
 
 import logging
 import boto3
