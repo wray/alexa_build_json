@@ -10,7 +10,7 @@ deploy:
   function_name: githubInfo
   region: us-east-1
   role: arn:aws:iam::980316180835:role/lambda_techem_skill
-  runtime: python3.7
+  runtime: python3.6
   module_name: alexa_py
   handler_name: lambda_handler
   zip: "./src"
