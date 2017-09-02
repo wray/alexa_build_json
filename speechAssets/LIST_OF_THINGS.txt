@@ -1,0 +1,2 @@
+custom_slot_1
+custom_slot_2
