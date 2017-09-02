@@ -5,6 +5,10 @@
 	},
 
 	{
+	    "intent": "AMAZON.StopIntent"
+	},
+
+	{
 	    "intent": "yourfirstintent"
 	},
 
@@ -16,10 +20,7 @@
 		}
 	    ],
 	    "intent":"yoursecondintent"
-	},
-
-	{
-	    "intent": "AMAZON.StopIntent"
 	}
+
     ]
 }
