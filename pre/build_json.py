@@ -8,8 +8,8 @@ for intent in ['yourfirstintent','yoursecondintent']:
 #
 # Put your custom code here. Call your APIs, scrape a website, ingest an RSS Feed, use your database.
 # Arrange your data to match the JSON convention:
-# responses = { 'intentname' : '<Your Response SSML>', 'intentwithslots' : { 'custom_slot_1' : '<Your response SSML>',
-#                                                                               'custom_slot_2' : '<Your response SSML'> }}
+# responses = { 'yourfirstintent' : '<Your Response SSML>', 'yoursecondintent' : { 'custom_slot_1' : '<Your response SSML>',
+#                                                                                   'custom_slot_2' : '<Your response SSML'> }}
 # 
 #
   
