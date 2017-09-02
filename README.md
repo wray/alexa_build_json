@@ -8,7 +8,7 @@ The way it works:
 * This prevents the lambda from having to call the API/db for every invocation -- good for multiple or excessive API calls required to get your data.
 * However, you must rebuild to ensure your data is "fresh".
 
-## Build -> Deploy -> Run Flow
+## Build (Heavy lifting done here) -> Deploy -> Run
 ### Build-time
 1) Push to master will initiate a Travis Build.
 2) Travis runs the build script that calls your custom python code in pre/build_json.py to create a json file.
