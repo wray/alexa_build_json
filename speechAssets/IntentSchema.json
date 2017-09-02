@@ -5,33 +5,17 @@
 	},
 
 	{
-	    "intent": "TopRepos"
-# Add Star and Forks
-	},
-
-	{
-	    "intent": "TopLanguages"
-# Use Activity
-	},
-
-	{
-	    "intent": "TopOrgs"
-# Use top repos
-	},
-
-	{
-	    "intent": "TopUsers"
-# Use top repos
+	    "intent": "yourfirstintent"
 	},
 
 	{
 	    "slots": [
 		{
-		    "name" : "topusersbylang_slot",
-		    "type" : "LIST_OF_LANGUAGES"
+		    "name" : "yoursecondintent_slot",
+		    "type" : "LIST_OF_THINGS"
 		}
 	    ],
-	    "intent":"TopUsersByLang"
+	    "intent":"yoursecondintent"
 	},
 
 	{
